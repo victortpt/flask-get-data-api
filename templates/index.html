@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div>
+        {% for datas in data %}
+            <span>{{ datas['_id'] }}</span>
+            <p>{{ datas['text'] }}</p>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
